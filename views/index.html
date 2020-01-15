@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Request Header Parser by Cara</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+  </head>
+  <body>
+    <header>
+      <h1>
+        Request Header Parser by Cara
+      </h1>
+    </header>
+
+    <main>
+      
+      <p>This app gets the IP address, preferred languages 
+        (from header Accept-Language) and system infos (from header User-Agent) for the clients device. The output is formatted in JSON.</p>
+      
+      <h2>
+        Example response:
+      </h2>
+      <pre><code>{
+    "ipaddress":"159.20.14.100",
+
+    "language":"en-US,en;q=0.5",
+
+    "software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"
+}
+          </code></pre>
+      <h2>
+        Try it out:
+      </h2>
+      <ul>
+        <li><a href="https://fate-profit.glitch.me/api/getclientinfo" target="_blank">Who Are You?</a></li>
+      </ul>
+      
+    </main>
+
+    <footer>
+      Created for <a href="https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/url-shortener-microservice">freeCodeCamp</a>
+    </footer>
+
+  </body>
+</html>
